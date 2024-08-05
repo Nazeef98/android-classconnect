@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="323dp"
+        android:layout_height="276dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/login_page" />
+
+    <TextView
+        android:id="@+id/social_login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo_image"
+        android:layout_marginStart="150dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="389dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/social_login_title"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="382dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/email"
+        android:autofillHints=""
+        android:background="@drawable/rounded_edit_text"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edit_text"
+        android:text="Login" />
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/google_login_wrapper"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/login_button"-->
+<!--        android:layout_centerInParent="true">-->
+<!--        android:background="@drawable/round_outline"-->
+
+<!--        <ImageView-->
+<!--            android:layout_marginTop="9dp"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/g"/>-->
+<!--        <Button-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Login with Google"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:focusable="false"-->
+<!--            android:focusableInTouchMode="false"/>-->
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/sign_up_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Didn't have an account?"
+            android:layout_marginStart="99dp" />
+        <Button
+            android:id="@+id/sign_up_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/forgot_password_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:layout_below="@+id/sign_up_wrapper"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black" />
+</RelativeLayout>
+

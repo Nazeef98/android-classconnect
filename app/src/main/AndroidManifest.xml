@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.class_connect1">
+
+    <!-- Add the INTERNET permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Class_Connect1"
+        tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyB04mR9Ic7JslAG-Hp5e2omV2nEj5LV08g" />
+
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity" android:exported="true"></activity>
+        <activity android:name=".SocialLoginActivity" android:exported="true"></activity>
+        <activity android:name=".SignupActivity" android:exported="true"></activity>
+        <activity android:name=".ResetPasswordOtpActivity" android:exported="true"></activity>
+        <activity android:name=".AboutActivity" android:exported="true"></activity>
+<!--        <activity android:name=".UserListActivity" android:exported="true"></activity>-->
+<!--        <activity android:name=".UserDetailActivity" android:exported="true"></activity>-->
+        <activity android:name=".ChangePasswordActivity" android:exported="true"></activity>
+        <activity android:name=".ResetPasswordActivity" android:exported="true"></activity>
+<!--        <activity android:name=".ItemUserActivity"></activity>-->
+        <activity android:name=".UserListActivity" android:exported="true" ></activity>
+        <activity android:name=".StudentDetailsActivity" android:exported="true"></activity>
+        <activity android:name=".EditProfileActivity" android:exported="true"></activity>
+
+
+    </application>
+
+</manifest>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<manifest xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    package="com.example.class_connect1">-->
+
+<!--    <application-->
+<!--        android:allowBackup="true"-->
+<!--        android:dataExtractionRules="@xml/data_extraction_rules"-->
+<!--        android:fullBackupContent="@xml/backup_rules"-->
+<!--        android:icon="@mipmap/ic_launcher"-->
+<!--        android:label="@string/app_name"-->
+<!--        android:roundIcon="@mipmap/ic_launcher_round"-->
+<!--        android:supportsRtl="true"-->
+<!--        android:theme="@style/Theme.Class_Connect1"-->
+<!--        tools:targetApi="31">-->
+
+<!--        <activity-->
+<!--            android:name=".SplashActivity"-->
+<!--            android:exported="true"-->
+<!--            >-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+<!--        <activity android:name=".HomeActivity" android:exported="true"></activity>-->
+<!--        <activity android:name=".SocialLoginActivity" android:exported="true"></activity>-->
+<!--        <activity android:name=".SignupActivity" android:exported="true"></activity>-->
+<!--        <activity android:name=".ResetPasswordActivity" android:exported="true"></activity>-->
+<!--        <activity android:name=".AboutActivity" android:exported="true"></activity>-->
+<!--        <activity android:name=".UserListActivity" android:exported="true"></activity>-->
+<!--        <activity android:name=".UserDetailActivity" android:exported="true"></activity>-->
+<!--        <activity android:name=".ChangePasswordActivity" android:exported="true"></activity>-->
+
+<!--    </application>-->
+
+<!--</manifest>-->
